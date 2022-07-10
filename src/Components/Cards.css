@@ -1,0 +1,7 @@
+.cards{
+    width: 350px;
+    height: 70px;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,55,0.9475140397956058) 100%);
+margin:auto;
+}

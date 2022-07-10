@@ -4,7 +4,7 @@ import InputField from './Components/InputFilled';
 import {useState} from "react"
 import {Todo} from "./Modal"
 import { isDefaultClause } from 'typescript';
-
+import Cards from "./Components/Cards";
 
 const  App: React.FC = () => {
 
@@ -20,7 +20,7 @@ const  App: React.FC = () => {
   }
 
   console.log(todo)
-
+  console.log(data)
   return (
     <div className="App">
      <h1 className="heading">Todo App</h1>
@@ -29,15 +29,10 @@ const  App: React.FC = () => {
      setTodo={setTodo}
      handleAdd={handleAdd}
      />
-     {
-      data.map((data) =>
-      
-        <div>
-          {data.todo}
-        </div>
-      
-      )
-     }
+     <Cards
+          data={data}
+          setData={setData}
+          />
     </div>
   );
 }
